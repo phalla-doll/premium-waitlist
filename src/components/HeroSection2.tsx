@@ -67,12 +67,9 @@ export default function HeroSection2() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-lime-500 to-green-500 px-8 py-4 font-bold text-white shadow-lg shadow-green-500/30 transition-all hover:shadow-xl hover:shadow-green-500/40 disabled:opacity-70"
+            className="rounded-xl bg-gradient-to-r from-lime-500/90 to-green-500/90 px-6 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition-all hover:from-lime-500 hover:to-green-500 disabled:opacity-70"
           >
-            <span className="relative z-10">
-              {status === "loading" ? "Joining..." : "Join Waitlist →"}
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-lime-400 to-green-400 opacity-0 transition-opacity group-hover:opacity-100" />
+            {status === "loading" ? "Joining…" : "Join Waitlist →"}
           </button>
         </form>
 

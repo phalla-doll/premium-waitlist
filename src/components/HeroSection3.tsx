@@ -76,7 +76,7 @@ export default function HeroSection3() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-full border border-white/40 bg-transparent px-12 py-3 text-sm uppercase tracking-widest text-white transition-all hover:border-white hover:bg-white hover:text-black disabled:opacity-50"
+            className="rounded-full border border-white/40 bg-transparent px-10 py-2.5 text-xs uppercase tracking-[0.2em] text-white transition-all hover:border-white hover:bg-white hover:text-black disabled:opacity-50"
           >
             {status === "loading" ? "Processing" : "Request Access"}
           </button>

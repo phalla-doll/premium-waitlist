@@ -36,12 +36,12 @@ export default function HeroSection1() {
       <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative z-10 flex h-full w-full flex-col items-center justify-center px-6 text-center">
-        <h1 className="max-w-3xl animate-fade-in text-3xl font-light leading-snug tracking-tight text-gray-800 sm:text-4xl md:text-5xl">
+        <h1 className="max-w-3xl animate-fade-in text-3xl font-light leading-snug tracking-tight text-white sm:text-4xl md:text-5xl motion-reduce:animate-none">
           We stress too much for a life that can end any time.
-          <span className="block mt-2 text-gray-500">Make sure to live.</span>
+          <span className="block mt-2 text-white/80">Make sure to live.</span>
         </h1>
 
-        <p className="mt-8 max-w-md text-base text-gray-600">
+        <p className="mt-8 max-w-md text-base text-white/90">
           A mindful approach to everyday living. Join the waitlist.
         </p>
 
@@ -49,30 +49,37 @@ export default function HeroSection1() {
           onSubmit={handleSubmit}
           className="mt-12 flex w-full max-w-sm flex-col gap-3"
         >
+          <label htmlFor="email" className="sr-only">
+            Email address
+          </label>
           <input
+            id="email"
             type="email"
+            name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@email.com"
+            placeholder="you@email.com…"
+            autoComplete="email"
+            spellCheck={false}
             required
-            className="rounded-lg border border-gray-200 bg-white px-5 py-3 text-gray-800 placeholder-gray-400 outline-none transition-all focus:border-gray-400 focus:ring-2 focus:ring-gray-100"
+            className="rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-white backdrop-blur-sm placeholder-white/50 outline-none transition-all focus:border-white/40 focus:ring-2 focus:ring-white/20"
           />
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-lg border border-gray-800 bg-transparent px-6 py-3 font-medium text-gray-800 transition-all hover:bg-gray-800 hover:text-white disabled:opacity-50"
+            className="rounded-lg border border-white/40 bg-transparent px-6 py-2.5 text-sm font-medium text-white transition-all hover:border-white hover:bg-white hover:text-gray-900 disabled:opacity-50"
           >
-            {status === "loading" ? "Joining..." : "Join Waitlist"}
+            {status === "loading" ? "Joining…" : "Join Waitlist"}
           </button>
         </form>
 
         {status === "success" && (
-          <p className="mt-4 text-sm text-green-600">
+          <p aria-live="polite" className="mt-4 text-sm text-green-400">
             You&apos;re on the list!
           </p>
         )}
         {status === "error" && (
-          <p className="mt-4 text-sm text-red-600">
+          <p aria-live="polite" className="mt-4 text-sm text-red-400">
             Something went wrong. Try again.
           </p>
         )}

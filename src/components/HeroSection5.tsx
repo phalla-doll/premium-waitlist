@@ -81,9 +81,9 @@ export default function HeroSection5() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-lg bg-white px-8 py-4 font-bold text-black transition-all hover:bg-white/90 disabled:opacity-70"
+            className="rounded-lg bg-white px-6 py-2.5 text-sm font-medium uppercase tracking-wide text-black transition-all hover:bg-white/90 disabled:opacity-70"
           >
-            {status === "loading" ? "JOINING..." : "JOIN NOW"}
+            {status === "loading" ? "JOINING…" : "JOIN NOW"}
           </button>
         </form>
 

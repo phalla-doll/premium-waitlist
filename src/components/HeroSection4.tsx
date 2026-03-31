@@ -89,15 +89,15 @@ export default function HeroSection4() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-4 font-semibold text-black transition-all hover:bg-white/90 disabled:opacity-70"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-2.5 text-sm font-medium text-black transition-all hover:bg-white/90 disabled:opacity-70"
                 >
                   {status === "loading" ? (
-                    "Joining..."
+                    "Joining…"
                   ) : (
                     <>
                       Join Waitlist
                       <svg
-                        className="h-5 w-5"
+                        className="h-4 w-4"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
