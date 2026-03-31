@@ -33,10 +33,10 @@ export default function HeroSection1() {
       >
         <source src="/bg-video.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-white/80" />
+      <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative z-10 flex h-full w-full flex-col items-center justify-center px-6 text-center">
-        <h1 className="max-w-3xl animate-fade-in text-3xl font-light leading-snug tracking-wide text-gray-800 sm:text-4xl md:text-5xl">
+        <h1 className="max-w-3xl animate-fade-in text-3xl font-light leading-snug tracking-tight text-gray-800 sm:text-4xl md:text-5xl">
           We stress too much for a life that can end any time.
           <span className="block mt-2 text-gray-500">Make sure to live.</span>
         </h1>

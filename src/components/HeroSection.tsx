@@ -41,7 +41,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-10 flex h-full w-full flex-col items-center justify-center px-6 text-center">
-        <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="max-w-4xl text-3xl font-light leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
           We stress too much for a life that can end any time.{" "}
           <span className="text-white/90">Make sure to live.</span>
         </h1>

@@ -38,7 +38,7 @@ export default function HeroSection2() {
       <div className="relative z-10 flex h-full w-full flex-col items-center justify-center px-6 text-center">
         <h1 className="max-w-4xl animate-slide-up text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
           We stress too much for a life that can end any time.
-          <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-lime-400 to-green-500 bg-clip-text text-transparent">
             {" "}
             Make sure to live.
           </span>
@@ -67,12 +67,12 @@ export default function HeroSection2() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 px-8 py-4 font-bold text-white shadow-lg shadow-purple-500/30 transition-all hover:shadow-xl hover:shadow-purple-500/40 disabled:opacity-70"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-lime-500 to-green-500 px-8 py-4 font-bold text-white shadow-lg shadow-green-500/30 transition-all hover:shadow-xl hover:shadow-green-500/40 disabled:opacity-70"
           >
             <span className="relative z-10">
               {status === "loading" ? "Joining..." : "Join Waitlist →"}
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 opacity-0 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-gradient-to-r from-lime-400 to-green-400 opacity-0 transition-opacity group-hover:opacity-100" />
           </button>
         </form>
 
